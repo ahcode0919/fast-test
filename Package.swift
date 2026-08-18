@@ -11,7 +11,7 @@ let package = Package(
         .library(
             name: "FastTest",
             targets: ["FastTest"]
-        ),
+        )
     ],
     dependencies: [
         .package(url: "https://github.com/SimplyDanny/SwiftLintPlugins", from: "0.62.3")
@@ -30,6 +30,6 @@ let package = Package(
             plugins: skipPlugins ? [] : [
                 .plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLintPlugins")
             ]
-        ),
+        )
     ]
 )
